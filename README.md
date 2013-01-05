@@ -4,7 +4,7 @@ NoiselabsDistributionModule
 [@php]: http://php.net/ "PHP: Hypertext Preprocessor"
 [@ppi]: http://ppi.io/  "The PPI Framework - A meta-framework built using Symfony2/ZendFramework2 and Doctrine2"
 
-The base module for [PPI][@ppi] distributions -- *NoiseLabs unofficial release*.
+The base module for [PPI][@ppi] distributions - *NoiseLabs unofficial release*.
 
 [![Build Status](https://secure.travis-ci.org/noiselabs/NoiselabsDistributionModule.png?branch=master)](http://travis-ci.org/noiselabs/NoiselabsDistributionModule)
 
@@ -62,7 +62,7 @@ return array(
 License
 -------
 
-This bundle is licensed under the LGPLv3 License. See the [LICENSE file](https://github.com/noiselabs/NoiselabsDistributionModule/blob/master/Resources/meta/LICENSE) for details.
+This bundle is licensed under the LGPLv3 License. See the [LICENSE file](https://github.com/noiselabs/NoiselabsDistributionModule/blob/master/LICENSE) for details.
 
 Authors
 -------
