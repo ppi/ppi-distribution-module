@@ -1,26 +1,26 @@
 <?php
 /**
- * This file is part of NoiselabsDistributionBundle
+ * This file is part of NoiselabsDistributionModule
  *
- * NoiselabsDistributionBundle is free software; you can redistribute it
+ * NoiselabsDistributionModule is free software; you can redistribute it
  * and/or modify it under the terms of the GNU Lesser General Public
  * License as published by the Free Software Foundation; either
  * version 3 of the License, or (at your option) any later version.
  *
- * NoiselabsDistributionBundle is distributed in the hope that it will be
+ * NoiselabsDistributionModule is distributed in the hope that it will be
  * useful, but WITHOUT ANY WARRANTY; without even the implied warranty
  * of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
  * Lesser General Public License for more details.
  *
  * You should have received a copy of the GNU Lesser General Public
- * License along with NoiselabsDistributionBundle; if not, see
+ * License along with NoiselabsDistributionModule; if not, see
  * <http://www.gnu.org/licenses/>.
  *
  *
  * DISCLAIMER:
  *
  *   This file was adapted from the original FrameworkRequirements distributed by
- *   the Symfony team in the SensionDistributionBundle.
+ *   the Symfony team in the SensioDistributionBundle.
  *
  *   (c) Fabien Potencier <fabien@symfony.com>
  *
@@ -38,7 +38,7 @@
  * ************** CAUTION **************
  *
  * @category    NoiseLabs
- * @package     DistributionBundle
+ * @package     DistributionModule
  * @copyright   (C) 2013 Vítor Brandão <noisebleed@noiselabs.org>
  * @license     http://www.gnu.org/licenses/lgpl-3.0-standalone.html LGPL-3
  * @link        http://www.noiselabs.org
@@ -530,7 +530,7 @@ class FrameworkRequirements extends RequirementCollection
         /* optional recommendations follow */
 
         $this->addRecommendation(
-            file_get_contents(__FILE__) === file_get_contents(__DIR__.'/../vendor/sensio/distribution-bundle/NoiseLabs/Module/DistributionBundle/resources/skeleton/app/FrameworkRequirements.php'),
+            file_get_contents(__FILE__) === file_get_contents(__DIR__.'/../vendor/noiselabs/ppi-distribution-module/NoiseLabs/Module/DistributionModule/resources/skeleton/app/FrameworkRequirements.php'),
             'Requirements file should be up-to-date',
             'Your requirements file is outdated. Run composer install and re-check your configuration.'
         );

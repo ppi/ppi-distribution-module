@@ -3,9 +3,9 @@
 
 require_once dirname(__FILE__).'/FrameworkRequirements.php';
 
-$symfonyRequirements = new FrameworkRequirements();
+$ppiRequirements = new FrameworkRequirements();
 
-$iniPath = $symfonyRequirements->getPhpIniConfigPath();
+$iniPath = $ppiRequirements->getPhpIniConfigPath();
 
 echo "********************************\n";
 echo "*                              *\n";
@@ -26,13 +26,13 @@ echo "*  from your web server using the web/config.php script.\n";
 
 echo_title('Mandatory requirements');
 
-foreach ($symfonyRequirements->getRequirements() as $req) {
+foreach ($ppiRequirements->getRequirements() as $req) {
     echo_requirement($req);
 }
 
 echo_title('Optional recommendations');
 
-foreach ($symfonyRequirements->getRecommendations() as $req) {
+foreach ($ppiRequirements->getRecommendations() as $req) {
     echo_requirement($req);
 }
 
