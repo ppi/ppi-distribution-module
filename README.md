@@ -1,4 +1,4 @@
 NoiselabsDistributionModule
 ===========================
 
-The base bundle for the PPI Distributions
+The base module for the PPI distribution.
