@@ -6,7 +6,7 @@ NoiselabsDistributionModule
 
 The base module for [PPI][@ppi] distributions - *NoiseLabs unofficial release*.
 
-[![Build Status](https://secure.travis-ci.org/noiselabs/NoiselabsDistributionModule.png?branch=master)](http://travis-ci.org/noiselabs/NoiselabsDistributionModule)
+[![Build Status](https://secure.travis-ci.org/noiselabs/NoiselabsDistributionModule.png)](http://travis-ci.org/noiselabs/NoiselabsDistributionModule)
 
 Requirements
 ------------
