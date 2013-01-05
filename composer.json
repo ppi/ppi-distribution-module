@@ -1,0 +1,27 @@
+{
+    "name": "noiselabs/ppi-distribution-module",
+    "description": "The base module for PPI distributions - NoiseLabs unofficial release",
+    "homepage": "https://github.com/noiselabs/NoiselabsDistributionModule",
+    "license": "LGPL-3.0",
+    "keywords": ["php", "framework", "ppi", "skeletonapp", "noiselabs"],
+    "authors": [
+        {
+            "name": "Vítor Brandão",
+            "email": "noisebleed@noiselabs.org",
+            "homepage": "http://blog.noiselabs.org"
+        },
+        {
+            "name": "Community contributions",
+            "homepage": "https://github.com/noiselabs/NoiselabsDistributionModule/contributors"
+        }
+    ],
+    "support": {
+        "irc": "irc://irc.freenode.org/noiselabs",
+        "issues": "https://github.com/noiselabs/NoiselabsDistributionModule/issues"
+    },
+    "require": {
+        "php": ">=5.3.3",
+        "ppi/framework": "2.1.x-dev"
+    },
+    "minimum-stability": "dev"
+}
