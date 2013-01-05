@@ -23,6 +23,10 @@
         "php": ">=5.3.3",
         "ppi/framework": "2.1.x-dev"
     },
+    "autoload": {
+        "psr-0": { "NoiseLabs\\Module\\DistributionModule": "" }
+    },
+    "target-dir": "NoiseLabs/Module/DistributionModule",
     "repositories": [{
         "type": "package",
         "package": {
