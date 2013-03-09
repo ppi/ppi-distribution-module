@@ -2,7 +2,7 @@
     "name": "ppi/distribution-module",
     "description": "The base module for PPI distributions - PPI official release",
     "homepage": "https://github.com/ppi/ppi-distribution-module",
-    "license": "LGPL-3.0",
+    "license": "MIT",
     "keywords": ["php", "framework", "ppi", "skeletonapp", "noiselabs"],
     "authors": [
         {
