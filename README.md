@@ -4,7 +4,7 @@ PPIDistributionModule
 [@php]: http://php.net/ "PHP: Hypertext Preprocessor"
 [@ppi]: http://ppi.io/  "The PPI Framework - A meta-framework built using Symfony2/ZendFramework2 and Doctrine2"
 
-The base module for [PPI][@ppi] distributions - *PPI unofficial release*.
+The base module for [PPI][@ppi] distributions - *PPI official release*.
 
 [![Build Status](https://secure.travis-ci.org/ppi/ppi-distribution-module.png)](http://travis-ci.org/ppi/ppi-distribution-module)
 

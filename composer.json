@@ -23,7 +23,6 @@
         "issues": "https://github.com/ppi/ppi-distribution-module/issues"
     },
     "require": {
-        "php": ">=5.3.3",
         "ppi/framework": "2.1.x-dev"
     },
     "autoload": {
