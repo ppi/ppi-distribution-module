@@ -1,12 +1,12 @@
-NoiselabsDistributionModule
+PPIDistributionModule
 ===========================
 
 [@php]: http://php.net/ "PHP: Hypertext Preprocessor"
 [@ppi]: http://ppi.io/  "The PPI Framework - A meta-framework built using Symfony2/ZendFramework2 and Doctrine2"
 
-The base module for [PPI][@ppi] distributions - *NoiseLabs unofficial release*.
+The base module for [PPI][@ppi] distributions - *PPI unofficial release*.
 
-[![Build Status](https://secure.travis-ci.org/noiselabs/NoiselabsDistributionModule.png)](http://travis-ci.org/noiselabs/NoiselabsDistributionModule)
+[![Build Status](https://secure.travis-ci.org/ppi/ppi-distribution-module.png)](http://travis-ci.org/ppi/ppi-distribution-module)
 
 Requirements
 ------------
@@ -31,7 +31,7 @@ curl -s http://getcomposer.org/installer | php
 ```js
 {
     "require": {
-        "noiselabs/ppi-distribution-module": "dev-master"
+        "ppi/ppi-distribution-module": "dev-master"
     }
 }
 ```
@@ -39,10 +39,10 @@ curl -s http://getcomposer.org/installer | php
 Now tell composer to download the module by running the command:
 
 ``` bash
-$ php composer.phar update noiselabs/ppi-distribution-module
+$ php composer.phar update ppi/distribution-module
 ```
 
-Composer will install the module to your project's `vendor/noiselabs` directory.
+Composer will install the module to your project's `vendor/ppi` directory.
 
 ### 2. Enable the module
 
@@ -53,7 +53,7 @@ Enable this module by editing `app/config/modules.php`:
 return array(
     'modules' => array(
         // ...
-        'NoiselabsDistributionModule',
+        'PPIDistributionModule',
     ),
     // ...
 );
@@ -62,16 +62,16 @@ return array(
 License
 -------
 
-This bundle is licensed under the LGPLv3 License. See the [LICENSE file](https://github.com/noiselabs/NoiselabsDistributionModule/blob/master/LICENSE) for details.
+This bundle is licensed under the MIT License. See the [LICENSE file](https://github.com/ppi/ppi-distribution-module/blob/master/LICENSE) for details.
 
 Authors
 -------
 
-Vítor Brandão - <vitor@noiselabs.org> ~ [twitter.com/noiselabs](http://twitter.com/noiselabs) ~ [blog.noiselabs.org](http://blog.noiselabs.org)
+Vítor Brandão - <vitor@noiselabs.org> ~ [twitter.com/noiselabs](http://twitter.com/noiselabs) ~ [noiselabs.org](http://noiselabs.org)
 
-See also the list of [contributors](https://github.com/noiselabs/NoiselabsDistributionModule/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/ppi/ppi-distribution-module/contributors) who participated in this project.
 
 Submitting bugs and feature requests
 ------------------------------------
 
-Bugs and feature requests are tracked on [GitHub](https://github.com/noiselabs/NoiselabsDistributionModule/issues).
+Bugs and feature requests are tracked on [GitHub](https://github.com/ppi/ppi-distribution-module/issues).

@@ -28,13 +28,13 @@ $minorProblems = $ppiRequirements->getFailedRecommendations();
         <title>PPI Configuration</title>
         <link rel="stylesheet" href="modules/framework/css/structure.css" media="all" />
         <link rel="stylesheet" href="modules/framework/css/body.css" media="all" />
-        <link rel="stylesheet" href="modules/noiselabsdistribution/webconfigurator/css/install.css" media="all" />
+        <link rel="stylesheet" href="modules/ppidistribution/webconfigurator/css/install.css" media="all" />
     </head>
     <body>
         <div id="content">
             <div class="header clear-fix">
                 <div class="header-logo">
-                    <img src="bundles/framework/images/logo_ppi.png" alt="PPI" />
+                    <img src="modules/framework/images/logo_ppi.png" alt="PPI" />
                 </div>
 
                 <div class="search">
@@ -42,7 +42,7 @@ $minorProblems = $ppiRequirements->getFailedRecommendations();
                     <div class="form-row">
 
                       <label for="search-id">
-                          <img src="bundles/framework/images/grey_magnifier.png" alt="Search on PPI website" />
+                          <img src="modules/framework/images/grey_magnifier.png" alt="Search on PPI website" />
                       </label>
 
                       <input name="q" id="search-id" type="search" placeholder="Search on PPI website" />

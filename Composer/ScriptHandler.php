@@ -1,21 +1,6 @@
 <?php
 /**
- * This file is part of NoiselabsDistributionModule
- *
- * NoiselabsDistributionModule is free software; you can redistribute it
- * and/or modify it under the terms of the GNU Lesser General Public
- * License as published by the Free Software Foundation; either
- * version 3 of the License, or (at your option) any later version.
- *
- * NoiselabsDistributionModule is distributed in the hope that it will be
- * useful, but WITHOUT ANY WARRANTY; without even the implied warranty
- * of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
- * Lesser General Public License for more details.
- *
- * You should have received a copy of the GNU Lesser General Public
- * License along with NoiselabsDistributionModule; if not, see
- * <http://www.gnu.org/licenses/>.
- *
+ * This file is part of the PPI Framework.
  *
  * DISCLAIMER:
  *
@@ -24,15 +9,14 @@
  *
  *   (c) Fabien Potencier <fabien@symfony.com>
  *
- *
- * @category    NoiseLabs
+ * @category    PPI
  * @package     DistributionModule
- * @copyright   (C) 2013 Vítor Brandão <vitor@noiselabs.org>
- * @license     http://www.gnu.org/licenses/lgpl-3.0-standalone.html LGPL-3
- * @link        http://www.noiselabs.org
+ * @copyright   Copyright (c) 2011-2013 Paul Dragoonis <paul@ppi.io>
+ * @license     http://opensource.org/licenses/mit-license.php MIT
+ * @link        http://www.ppi.io
  */
 
-namespace NoiseLabs\Module\DistributionModule\Composer;
+namespace PPI\Module\DistributionModule\Composer;
 
 use Symfony\Component\Process\Process;
 use Symfony\Component\Process\PhpExecutableFinder;
@@ -41,7 +25,7 @@ use Symfony\Component\Process\PhpExecutableFinder;
  * Composer script handler.
  *
  * @author Jordi Boggiano <j.boggiano@seld.be>
- * @author Vítor Brandão <vitor@noiselabs.org>
+ * @author Vítor Brandão <vitor@ppi.io> <vitor@noiselabs.org>
  */
 class ScriptHandler
 {
