@@ -16,7 +16,7 @@
  * @link        http://www.ppi.io
  */
 
-namespace PPI\Module\DistributionModule\Composer;
+namespace PPI\DistributionModule\Composer;
 
 use Symfony\Component\Process\Process;
 use Symfony\Component\Process\PhpExecutableFinder;

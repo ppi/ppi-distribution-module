@@ -62,7 +62,7 @@ return array(
 License
 -------
 
-This bundle is licensed under the MIT License. See the [LICENSE file](https://github.com/ppi/ppi-distribution-module/blob/master/LICENSE) for details.
+This module is licensed under the MIT License. See the [LICENSE file](https://github.com/ppi/ppi-distribution-module/blob/master/LICENSE) for details.
 
 Authors
 -------
