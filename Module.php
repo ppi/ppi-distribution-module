@@ -9,8 +9,9 @@
  * @link        http://www.ppi.io
  */
 
-namespace PPI\Module\DistributionModule;
+namespace PPI\DistributionModule;
 
+use PPI\Autoload;
 use PPI\Module\AbstractModule;
 
 /**
@@ -22,8 +23,9 @@ class Module extends AbstractModule
 {
     const VERSION = '0.0.1-DEV';
 
-    protected $_moduleName = 'PPIDistributionModule';
-
+    /**
+     * {@inheritDoc}
+     */
     public function init($e)
     {
         Autoload::add(__NAMESPACE__, dirname(__DIR__));
