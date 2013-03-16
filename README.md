@@ -1,5 +1,5 @@
-PPIDistributionModule
-===========================
+![PPI](http://upload.wikimedia.org/wikipedia/commons/7/7d/Ppi-framework-logo.png) PPI Distribution Module
+==========================================================================================================
 
 [@php]: http://php.net/ "PHP: Hypertext Preprocessor"
 [@ppi]: http://ppi.io/  "The PPI Framework - A meta-framework built using Symfony2/ZendFramework2 and Doctrine2"
@@ -31,7 +31,7 @@ curl -s http://getcomposer.org/installer | php
 ```js
 {
     "require": {
-        "ppi/ppi-distribution-module": "dev-master"
+        "ppi/distribution-module": "dev-master"
     }
 }
 ```
