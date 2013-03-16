@@ -1,5 +1,5 @@
-![PPI](http://upload.wikimedia.org/wikipedia/commons/7/7d/Ppi-framework-logo.png) PPI Distribution Module
-==========================================================================================================
+PPI Distribution Module
+=======================
 
 [@php]: http://php.net/ "PHP: Hypertext Preprocessor"
 [@ppi]: http://ppi.io/  "The PPI Framework - A meta-framework built using Symfony2/ZendFramework2 and Doctrine2"
@@ -46,17 +46,12 @@ Composer will install the module to your project's `vendor/ppi` directory.
 
 ### 2. Enable the module
 
-Enable this module by editing `app/config/modules.php`:
+Enable this module by editing `app/config/modules.yml`:
 
-``` php
-<?php
-return array(
-    'modules' => array(
-        // ...
-        'PPIDistributionModule',
-    ),
-    // ...
-);
+``` yml
+modules:
+    - PPI\DistributionModule
+    # ...
 ```
 
 License
