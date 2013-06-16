@@ -1,6 +1,6 @@
 {
     "name": "ppi/distribution-module",
-    "description": "The base module for PPI distributions - PPI official release",
+    "description": "The base module for PPI distributions",
     "homepage": "https://github.com/ppi/ppi-distribution-module",
     "license": "MIT",
     "keywords": ["php", "framework", "ppi", "skeletonapp", "noiselabs"],
