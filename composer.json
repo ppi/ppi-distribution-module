@@ -23,7 +23,7 @@
         "issues": "https://github.com/ppi/ppi-distribution-module/issues"
     },
     "require": {
-        "ppi/framework": "dev-2.1-noiselabs"
+        "ppi/framework": "dev-2.1"
     },
     "autoload": {
         "psr-0": { "PPI\\DistributionModule": "" }
