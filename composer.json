@@ -3,7 +3,7 @@
     "description": "The base module for PPI distributions",
     "homepage": "https://github.com/ppi/ppi-distribution-module",
     "license": "MIT",
-    "keywords": ["php", "framework", "ppi", "skeletonapp", "noiselabs"],
+    "keywords": ["php", "framework", "ppi", "skeletonapp"],
     "authors": [
         {
             "name": "Paul Dragoonis",
