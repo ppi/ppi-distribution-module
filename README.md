@@ -62,8 +62,8 @@ This module is licensed under the MIT License. See the [LICENSE file](https://gi
 Authors
 -------
 
-Paul Dragoonis - <paul@ppi.io> ~ [twitter.com/dr4goonis](http://twitter.com/dr4goonis)
-Vítor Brandão - <vitor@ppi.io> ~ [twitter.com/noiselabs](http://twitter.com/noiselabs)
+* Paul Dragoonis - <paul@ppi.io> ~ [twitter.com/dr4goonis](http://twitter.com/dr4goonis)
+* Vítor Brandão - <vitor@ppi.io> ~ [twitter.com/noiselabs](http://twitter.com/noiselabs)
 
 See also the list of [contributors](https://github.com/ppi/ppi-distribution-module/contributors) who participated in this project.
 
