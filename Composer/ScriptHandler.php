@@ -43,12 +43,11 @@ class ScriptHandler
         }
 
         if (!is_dir($webDir)) {
-            echo 'The ppi-web-dir ('.$webDir.') specified in composer.json was not found in '.getcwd().', can not install assets.'.PHP_EOL;
-
+            echo 'The ppi-web-dir (' . $webDir . ') specified in composer.json was not found in ' . getcwd() . ', can not install assets.' . PHP_EOL;
             return;
         }
 
-        static::executeCommand($event, $appDir, 'assets:install '.$symlink.escapeshellarg($webDir));
+        static::executeCommand($event, $appDir, 'assets:install ' . $symlink . escapeshellarg($webDir));
     }
 
     public static function installRequirementsFile($event)
@@ -57,13 +56,12 @@ class ScriptHandler
         $appDir = $options['ppi-app-dir'];
 
         if (!is_dir($appDir)) {
-            echo 'The ppi-app-dir ('.$appDir.') specified in composer.json was not found in '.getcwd().', can not install the requirements file.'.PHP_EOL;
-
+            echo 'The ppi-app-dir (' . $appDir . ') specified in composer.json was not found in ' . getcwd() . ', can not install the requirements file.' . PHP_EOL;
             return;
         }
 
-        copy(__DIR__.'/../resources/skeleton/app/FrameworkRequirements.php', $appDir.'/FrameworkRequirements.php');
-        copy(__DIR__.'/../resources/skeleton/app/check', $appDir.'/check');
+        copy(__DIR__ . '/../resources/skeleton/app/FrameworkRequirements.php', $appDir . '/FrameworkRequirements.php');
+        copy(__DIR__ . '/../resources/skeleton/app/check', $appDir . '/check');
 
         $webDir = $options['ppi-web-dir'];
 
@@ -81,13 +79,15 @@ class ScriptHandler
     protected static function executeCommand($event, $appDir, $cmd, $timeout = 300)
     {
         $php = escapeshellarg(self::getPhp());
-        $console = escapeshellarg($appDir.'/console');
+        $console = escapeshellarg($appDir . '/console');
         if ($event->getIO()->isDecorated()) {
             $console .= ' --ansi';
         }
 
-        $process = new Process($php.' '.$console.' '.$cmd, null, null, null, $timeout);
-        $process->run(function ($type, $buffer) { echo $buffer; });
+        $process = new Process($php . ' ' . $console . ' ' . $cmd, null, null, null, $timeout);
+        $process->run(function ($type, $buffer) {
+            echo $buffer;
+        });
         if (!$process->isSuccessful()) {
             throw new \RuntimeException(sprintf('An error occurred when executing the "%s" command.', escapeshellarg($cmd)));
         }
@@ -101,7 +101,7 @@ class ScriptHandler
             'ppi-assets-install' => 'hard'
         ), $event->getComposer()->getPackage()->getExtra());
 
-        $options['ppi-assets-install'] = getenv('PPI_ASSETS_INSTALL') ?: $options['ppi-assets-install'];
+        $options['ppi-assets-install'] = getenv('PPI_ASSETS_INSTALL') ? : $options['ppi-assets-install'];
 
         $options['process-timeout'] = $event->getComposer()->getConfig()->get('process-timeout');
 
