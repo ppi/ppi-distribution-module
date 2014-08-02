@@ -20,16 +20,39 @@ namespace PPI\DistributionModule\Composer;
 
 use Symfony\Component\Process\Process;
 use Symfony\Component\Process\PhpExecutableFinder;
+use Composer\Script\Event;
 
 /**
  * Composer script handler.
  *
  * @author Jordi Boggiano <j.boggiano@seld.be>
- * @author Vítor Brandão <vitor@ppi.io> <vitor@noiselabs.org>
+ * @author Vítor Brandão <vitor@ppi.io>
+ * @author Paul Dragoonis <paul@ppi.io>
  */
 class ScriptHandler
 {
-    public static function installAssets($event)
+
+    /**
+     * Apply open writable permissions to logs and cache folders
+     *
+     * @param $event
+     */
+    public static function permissionDirs(Event $event)
+    {
+        $options = self::getOptions($event);
+        $appDir = $options['ppi-app-dir'];
+        $logsDir = realpath($appDir) . '/logs';
+        $cacheDir = realpath($appDir) . '/cache';
+var_dump($logsDir, $cacheDir); exit;
+        foreach(array($logsDir, $cacheDir) as $dir) {
+            if(is_dir($dir) && is_writable($dir)) {
+                @chmod($dir, 777);
+            }
+        }
+
+    }
+
+    public static function installAssets(Event $event)
     {
         $options = self::getOptions($event);
         $appDir = $options['ppi-app-dir'];
@@ -50,7 +73,7 @@ class ScriptHandler
         static::executeCommand($event, $appDir, 'assets:install ' . $symlink . escapeshellarg($webDir));
     }
 
-    public static function installRequirementsFile($event)
+    public static function installRequirementsFile(Event $event)
     {
         $options = self::getOptions($event);
         $appDir = $options['ppi-app-dir'];
@@ -76,7 +99,7 @@ class ScriptHandler
         */
     }
 
-    protected static function executeCommand($event, $appDir, $cmd, $timeout = 300)
+    protected static function executeCommand(Event $event, $appDir, $cmd, $timeout = 300)
     {
         $php = escapeshellarg(self::getPhp());
         $console = escapeshellarg($appDir . '/console');
@@ -93,7 +116,7 @@ class ScriptHandler
         }
     }
 
-    protected static function getOptions($event)
+    protected static function getOptions(Event $event)
     {
         $options = array_merge(array(
             'ppi-app-dir' => 'app',
