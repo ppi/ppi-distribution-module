@@ -23,7 +23,7 @@
         "issues": "https://github.com/ppi/ppi-distribution-module/issues"
     },
     "require": {
-        "ppi/framework": "dev-develop"
+        "ppi/framework": "dev-develop",
     },
     "autoload": {
         "psr-4": {
@@ -31,6 +31,5 @@
             "PPI\\DistributionModule\\Tests\\": "tests"
         }
     },
-    "target-dir": "PPI/DistributionModule",
     "minimum-stability": "dev"
 }

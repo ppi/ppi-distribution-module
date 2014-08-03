@@ -43,7 +43,6 @@ class ScriptHandler
         $appDir = $options['ppi-app-dir'];
         $logsDir = realpath($appDir) . '/logs';
         $cacheDir = realpath($appDir) . '/cache';
-var_dump($logsDir, $cacheDir); exit;
         foreach(array($logsDir, $cacheDir) as $dir) {
             if(is_dir($dir) && is_writable($dir)) {
                 @chmod($dir, 777);
