@@ -1,0 +1,36 @@
+{
+    "name": "ppi/distribution-module",
+    "description": "The base module for PPI distributions",
+    "homepage": "https://github.com/ppi/ppi-distribution-module",
+    "license": "MIT",
+    "keywords": ["php", "framework", "ppi", "skeletonapp", "noiselabs"],
+    "authors": [
+        {
+            "name": "Paul Dragoonis",
+            "email": "paul@ppi.io"
+        },
+        {
+            "name": "Vítor Brandão",
+            "email": "vitor@ppi.io"
+        },
+        {
+            "name": "Community contributions",
+            "homepage": "https://github.com/ppi/ppi-distribution-module/contributors"
+        }
+    ],
+    "support": {
+        "irc": "irc://irc.freenode.org/ppi",
+        "issues": "https://github.com/ppi/ppi-distribution-module/issues"
+    },
+    "require": {
+        "ppi/framework": "dev-develop"
+    },
+    "autoload": {
+        "psr-4": {
+            "PPI\\DistributionModule\\": "src/",
+            "PPI\\DistributionModule\\Tests\\": "tests"
+        }
+    },
+    "target-dir": "PPI/DistributionModule",
+    "minimum-stability": "dev"
+}
