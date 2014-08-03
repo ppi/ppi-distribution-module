@@ -23,7 +23,7 @@
         "issues": "https://github.com/ppi/ppi-distribution-module/issues"
     },
     "require": {
-        "ppi/framework": "dev-develop",
+        "ppi/framework": "dev-develop"
     },
     "autoload": {
         "psr-4": {
