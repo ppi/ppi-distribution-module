@@ -26,8 +26,10 @@
         "ppi/framework": "2.1.*@dev"
     },
     "autoload": {
-        "psr-0": { "PPI\\DistributionModule": "" }
+        "psr-4": {
+            "PPI\\DistributionModule\\": "src/",
+            "PPI\\DistributionModule\\Tests\\": "tests"
+        }
     },
-    "target-dir": "PPI/DistributionModule",
     "minimum-stability": "dev"
 }
