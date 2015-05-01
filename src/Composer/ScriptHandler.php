@@ -60,7 +60,7 @@ class ScriptHandler
         $symlink = '';
         if ($options['ppi-assets-install'] == 'symlink') {
             $symlink = '--symlink ';
-        } elseif ($options['ppi-assets-install'] == 'relative') {
+        } elseif ($options['ppi-assets-install'] == 'symlink-relative') {
             $symlink = '--symlink --relative ';
         }
 
