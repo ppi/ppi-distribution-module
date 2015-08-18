@@ -22,9 +22,6 @@
         "irc": "irc://irc.freenode.org/ppi",
         "issues": "https://github.com/ppi/ppi-distribution-module/issues"
     },
-    "require": {
-        "ppi/framework": "dev-master"
-    },
     "autoload": {
         "psr-4": {
             "PPI\\DistributionModule\\": "src/",
