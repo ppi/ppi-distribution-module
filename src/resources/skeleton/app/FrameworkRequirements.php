@@ -614,17 +614,24 @@ class FrameworkRequirements extends RequirementCollection
             );
         }
 
+        $isCli = PHP_SAPI === 'cli';
         $accelerator =
             (function_exists('apc_store') && ini_get('apc.enabled'))
             ||
-            function_exists('eaccelerator_put') && ini_get('eaccelerator.enable')
+            (function_exists('eaccelerator_put') && ini_get('eaccelerator.enable'))
             ||
             function_exists('xcache_set')
+            ||
+            (extension_loaded('Zend OPcache')
+                && (($isCli && ini_get('opcache.enable_cli'))
+                    || (!$isCli && ini_get('opcache.enable'))
+                )
+            )
         ;
 
         $this->addRecommendation(
             $accelerator,
-            'a PHP accelerator should be installed',
+            'A PHP accelerator should be installed',
             'Install and enable a <strong>PHP accelerator</strong> like APC (highly recommended).'
         );
 
