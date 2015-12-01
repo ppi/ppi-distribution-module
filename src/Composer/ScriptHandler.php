@@ -45,7 +45,7 @@ class ScriptHandler
         $cacheDir = realpath($appDir) . '/cache';
         foreach(array($logsDir, $cacheDir) as $dir) {
             if(is_dir($dir) && is_writable($dir)) {
-                @chmod($dir, 777);
+                @chmod($dir, 0777);
             }
         }
 
