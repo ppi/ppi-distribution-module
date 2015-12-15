@@ -28,8 +28,5 @@
             "PPI\\DistributionModule\\Tests\\": "tests"
         }
     },
-    "minimum-stability": "dev",
-    "require": {
-        "ppi/framework": "~2.1.0-alpha2"
-    }
+    "minimum-stability": "dev"
 }
