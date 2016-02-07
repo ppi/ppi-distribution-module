@@ -28,8 +28,8 @@
             "PPI\\DistributionModule\\Tests\\": "tests"
         }
     },
-    "minimum-stability": "dev",
     "require": {
-        "ppi/framework": "2.2.x-dev",
-    }
+        "ppi/framework": "~2.1"
+    },
+    "minimum-stability": "dev"
 }
